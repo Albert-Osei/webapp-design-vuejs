@@ -15,7 +15,7 @@
       <div class="footer-icons">
         <img src="../assets/socialmedia.png" alt="" />
       </div>
-      <button class="footer-btn">Get started</button>
+      <button class="footer-button">Get started</button>
     </div>
   </div>
 </template>
@@ -61,7 +61,7 @@ export default {};
   align-items: center;
   margin-left: auto;
 }
-.footer-btn {
+.footer-button {
   width: 113px;
   height: 43px;
   background: #d2e1ff;
