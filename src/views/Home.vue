@@ -1,5 +1,5 @@
 <template>
-  <div class="root">
+  <div class="home">
     <div class="navbar">
       <div class="navbar-left">
         <div class="logo">
@@ -103,27 +103,28 @@
             <div class="features-image">
               <img src="../assets/overview-img.svg" alt="" />
             </div>
-            <p class="grid-topic">Overview</p>
+            <p class="grid-topic">Files</p>
             <p class="grid-text">
-              Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+              No vim nulla vitae intellegat. Ei enim error ius, solet atomorum
+              conceptam ex has.
             </p>
           </div>
           <div class="features-container-item">
             <div class="features-image">
               <img src="../assets/overview-img.svg" alt="" />
             </div>
-            <p class="grid-topic">Overview</p>
+            <p class="grid-topic">Meeting Chats</p>
             <p class="grid-text">
-              Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+              Vim ne tacimates neglegentur. Erat diceret omittam at est.
             </p>
           </div>
           <div class="features-container-item">
             <div class="features-image">
               <img src="../assets/overview-img.svg" alt="" />
             </div>
-            <p class="grid-topic">Overview</p>
+            <p class="grid-topic">Save events</p>
             <p class="grid-text">
-              Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+              Nisl idque mel ea, nominati voluptatum.
             </p>
           </div>
         </div>
@@ -164,65 +165,227 @@
         <h3>Start reading our blog</h3>
       </div>
 
-    <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="false">
-      <slide>
-        <div class="main-blog">
-        <div class="blog-container">
-          <div class="blog-item1">
-            <img src="../assets/blog-image.png" />
+      <carousel
+        :per-page="1"
+        :navigate-to="someLocalProperty"
+        :mouse-drag="false"
+      >
+        <slide>
+          <div class="main-blog">
+            <div class="blog-container">
+              <div class="blog-item1">
+                <img src="../assets/blog-image.png" />
+              </div>
+              <div class="blog-item2">
+                <h2 class="item2-heading">How to start planning</h2>
+                <h3 class="item2-text">
+                  Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                  Eu usu vidit tractatos, vero tractatos ius an, in mel diceret
+                  persecuti. Natum petentium principes mei ea. Tota everti
+                  periculis vis ei, quas tibique pro at, eos ut decore ...
+                </h3>
+                <div class="btn-all">
+                  <button class="item2-btn1">Read more</button>
+                  <button class="item2-btn2">Add to your bookmarks</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="blog-item2">
-            <h2 class="item2-heading">How to start planning</h2>
-            <h3 class="item2-text">
-              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu
-              usu vidit tractatos, vero tractatos ius an, in mel diceret
-              persecuti. Natum petentium principes mei ea. Tota everti periculis
-              vis ei, quas tibique pro at, eos ut decore ...
-            </h3>
-            <div class="btn-all">
-              <button class="item2-btn1">Read more</button>
-              <button class="item2-btn2">Add to your bookmarks</button>
-            </div>         
+        </slide>
+        <slide>
+          <div class="main-blog">
+            <div class="blog-container">
+              <div class="blog-item1">
+                <img src="../assets/blog-image.png" />
+              </div>
+              <div class="blog-item2">
+                <h2 class="item2-heading">How to start planning</h2>
+                <h3 class="item2-text">
+                  Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                  Eu usu vidit tractatos, vero tractatos ius an, in mel diceret
+                  persecuti. Natum petentium principes mei ea. Tota everti
+                  periculis vis ei, quas tibique pro at, eos ut decore ...
+                </h3>
+                <div class="btn-all">
+                  <button class="item2-btn1">Read more</button>
+                  <button class="item2-btn2">Add to your bookmarks</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      </slide>
-      <slide>
-        <div class="main-blog">
-        <div class="blog-container">
-          <div class="blog-item1">
-            <img src="../assets/blog-image.png" />
+        </slide>
+        <slide>
+          <div class="main-blog">
+            <div class="blog-container">
+              <div class="blog-item1">
+                <img src="../assets/blog-image.png" />
+              </div>
+              <div class="blog-item2">
+                <h2 class="item2-heading">How to start planning</h2>
+                <h3 class="item2-text">
+                  Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                  Eu usu vidit tractatos, vero tractatos ius an, in mel diceret
+                  persecuti. Natum petentium principes mei ea. Tota everti
+                  periculis vis ei, quas tibique pro at, eos ut decore ...
+                </h3>
+                <div class="btn-all">
+                  <button class="item2-btn1">Read more</button>
+                  <button class="item2-btn2">Add to your bookmarks</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="blog-item2">
-            <h2 class="item2-heading">How to start planning</h2>
-            <h3 class="item2-text">
-              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu
-              usu vidit tractatos, vero tractatos ius an, in mel diceret
-              persecuti. Natum petentium principes mei ea. Tota everti periculis
-              vis ei, quas tibique pro at, eos ut decore ...
-            </h3>
-            <div class="btn-all">
-              <button class="item2-btn1">Read more</button>
-              <button class="item2-btn2">Add to your bookmarks</button>
-            </div>         
-          </div>
-        </div>
-      </div>
-      </slide>
-    </carousel>
-
-
-
-
-
-
-      
+        </slide>
+      </carousel>
     </section>
+
+    <!-- Quotes section -->
+    <section class="quotes">
+      <div class="quotes-container">
+        <div class="quotes-item1">
+          <h3 class="quotes-first-header">Testimonials</h3>
+          <h2 class="quotes-second-header">Customer's quotes</h2>
+          <p class="quotes-text">
+            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
+            atqui laudem an.
+          </p>
+        </div>
+        <div class="quotes-item2">
+          <carousel
+            :per-page="1"
+            :navigate-to="someLocalProperty"
+            :mouse-drag="false"
+          >
+            <slide>
+              <div class="quotes-image">
+                <img src="../assets/Group 72.png" alt="" />
+              </div>
+            </slide>
+            <slide>
+              <div class="quotes-image">
+                <img src="../assets/Group 72.png" alt="" />
+              </div>
+            </slide>
+            <slide>
+              <div class="quotes-image">
+                <img src="../assets/Group 72.png" alt="" />
+              </div>
+            </slide>
+          </carousel>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="faq-heading">
+        <h3 class="faq-first-header">Customer help</h3>
+        <h2 class="faq-second-header">Frequently asked questions</h2>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <img src="../assets/Down-arrow.svg" alt="" />
+          <p class="question-text">Reque insolens in vel?</p>
+        </div>
+        <div class="line-break"></div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <img src="../assets/Down-arrow.svg" alt="" />
+          <p class="question-text">
+            Vis rebum error graecis ea, id sit postea accusamus?
+          </p>
+        </div>
+        <div class="line-break"></div>
+      </div>
+      <div class="question-block">
+        <div class="new-question">
+          <div class="new-question-block">
+            <img src="../assets/Up-arrow.svg" alt="" />
+            <p class="question-text-title">Lorem repudiandae ne nec?</p>
+          </div>
+          <div class="question-text-content">
+            <p>
+              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu
+              usu vidit tractatos, vero tractatos ius an, in mel diceret
+              persecuti.
+            </p>
+            <button class="question-btn">Go to documentation</button>
+          </div>
+        </div>
+        <div class="line-break"></div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <img src="../assets/Down-arrow.svg" alt="" />
+          <p class="question-text">
+            Ad dicit numquam vel. Et eos iudico feugait percipitur?
+          </p>
+        </div>
+        <div class="line-break"></div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <img src="../assets/Down-arrow.svg" alt="" />
+          <p class="question-text">
+            Sea no dico percipitur. Fierent constituam definitiones id eum?
+          </p>
+        </div>
+        <div class="line-break"></div>
+      </div>
+    </section>
+
+    <!-- Get Started Section -->
+    <section class="getStarted">
+      <div class="getStarted-heading">
+        <h3 class="getStarted-first-header">Plan your life</h3>
+        <h2 class="getStarted-second-header">Get <span>started</span> now</h2>
+      </div>
+      <p class="getStarted-text">
+        Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
+        atqui laudem an, insolens gubergren similique est cu. Et vel modus
+        congue vituperata.
+      </p>
+      <div class="getStarted-allBtn">
+        <button class="allBtn-one">View pricing</button>
+        <button class="allBtn-two">Read documentation</button>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <div class="newsletter-item1">
+          <h3>Sign up for newsletter</h3>
+          <p>
+            Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero
+            alterum.
+          </p>
+        </div>
+        <div class="newsletter-item2">
+          <input
+            class="input-field"
+            type="text"
+            name="email"
+            placeholder="Email address"
+          />
+          <button class="newsletter-btn">Save me</button>
+        </div>
+      </div>
+    </section>
+    <Footer />
   </div>
 </template>
 
 <script>
-export default {};
+import Footer from "@/components/Footer.vue";
+
+export default {
+  name: "Home",
+  components: {
+    Footer,
+  },
+};
 </script>
 
 <style scoped>
@@ -605,10 +768,10 @@ a {
 .blog-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: #FFFFFF;
-  border: 1px solid #D8E3FE;
+  background: #ffffff;
+  border: 1px solid #d8e3fe;
   box-sizing: border-box;
-  box-shadow: 0px 15px 50px #EFF4FF;
+  box-shadow: 0px 15px 50px #eff4ff;
   width: 958px;
   margin: auto;
 }
@@ -625,7 +788,7 @@ a {
   font-family: Quicksand;
   font-weight: normal;
   font-size: 36px;
-  color: #3D4F9F;
+  color: #3d4f9f;
   margin: 63px 0 32px;
 }
 .item2-text {
@@ -633,18 +796,18 @@ a {
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: #8D96BD;
+  color: #8d96bd;
   max-width: 407px;
 }
 .item2-btn1 {
   width: 113px;
   height: 43px;
-  background: #D2E1FF;
+  background: #d2e1ff;
   border-radius: 2px;
   font-family: Quicksand;
   font-weight: bold;
   font-size: 13px;
-  color: #3A79FF;
+  color: #3a79ff;
   border: none;
   margin-right: 8px;
 }
@@ -659,17 +822,254 @@ a {
   font-family: Quicksand;
   font-weight: bold;
   font-size: 13px;
-  color: #A6B6DA;
-  background: #FFFFFF;
+  color: #a6b6da;
+  background: #ffffff;
   border-radius: 2px;
   border: none;
 }
 
+.quotes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 479px;
+  background: linear-gradient(180deg, #eaf0ff 0%, #f6f9ff 100%);
+}
+.quotes-first-header {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3d4f9f;
+}
+.quotes-second-header {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-size: 36px;
+  color: #3d4f9f;
+  padding: 31px 0 14px;
+}
+.quotes-text {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: #a4abc8;
+  max-width: 320px;
+}
+.quotes-image {
+  width: 423px;
+  /* height: 206.43px;  */
+  margin: auto;
+}
+.quotes-image img {
+  width: 100%;
+  height: 100%;
+}
+.quotes-item2 {
+  margin: 109px 0px 0px 132px;
+}
+.quotes-item1 {
+  margin: auto;
+}
 
+.faq {
+  background: #ffffff;
+  padding: 230px 345px 120px 345px;
+}
+.faq-heading {
+  text-align: center;
+}
+.faq-first-header {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3d4f9f;
+}
+.faq-second-header {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-size: 24px;
+  color: #3d4f9f;
+  margin: 20px 0px 68px;
+}
+.question-text {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: #8e96b7;
+  margin-left: 24px;
+}
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 0px 0px 15px 300px;
+}
+.line-break {
+  border: 1px solid #d8e3fe;
+  width: 653px;
+  margin: auto;
+}
+.question-block {
+  margin-bottom: 17px;
+}
+.question-text-title {
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: #495274;
+  margin-left: 24px;
+}
+.question-text-content {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #8d96bd;
+  margin: 16px 0px 53px 60px;
+  display: flex;
+}
+.question-text-content > p {
+  max-width: 310px;
+  margin-right: 62px;
+}
+.question-btn {
+  width: 195px;
+  height: 43px;
+  background: #e8ecf4;
+  border-radius: 2px;
+  font-family: Quicksand;
+  font-weight: 500;
+  font-size: 13px;
+  color: #7382a3;
+  border: none;
+}
+.new-question {
+  align-items: center;
+  justify-content: left;
+  margin: 0px 0px 15px 300px;
+}
+.new-question-block {
+  display: flex;
+}
 
+.getStarted {
+  background-image: url(../assets/get.png);
+  height: 447px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.getStarted-heading {
+  text-align: center;
+}
+.getStarted-first-header {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 91px 0px 16px 0px;
+}
+.getStarted-second-header {
+  font-family: Quicksand;
+  font-weight: 300;
+  font-size: 48px;
+  color: #ffffff;
+}
+.getStarted-second-header span {
+  font-weight: bold;
+}
+.getStarted-text {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-align: center;
+  max-width: 712px;
+  margin: auto;
+  padding: 28px 0px 80px 0px;
+}
+.getStarted-allBtn {
+  text-align: center;
+}
+.allBtn-one {
+  width: 130.08px;
+  height: 43px;
+  background: #ffffff;
+  box-shadow: 0px 5px 15px #6480e8;
+  border-radius: 2px;
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 13px;
+  color: #565f82;
+  border: none;
+}
+.allBtn-two {
+  width: 155px;
+  height: 43px;
+  background: linear-gradient(229.32deg, #6888ff 12.77%, #5e80ff 73.11%);
+  font-family: Quicksand;
+  font-weight: 500;
+  font-size: 13px;
+  color: #c7d3ff;
+  border: 1px solid #a0b4ff;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
 
+.newsletter-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 118px 267px 119px 267px;
+  border-bottom: 1px solid #d8e3fe;
+}
 
-
-
-
+.newsletter-item1 h3 {
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 18px;
+  color: #3d4f9f;
+}
+.newsletter-item1 p {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #8d96bd;
+  max-width: 330px;
+  margin-top: 18px;
+}
+.input-field {
+  width: 279px;
+  height: 59px;
+  background: #efeff7;
+  border-radius: 5px;
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 13px;
+  color: #7a85ad;
+  padding: 21px 0px 21px 23px;
+  border: none;
+  margin-right: 15px;
+}
+.newsletter-btn {
+  width: 184px;
+  height: 59px;
+  background: #4d6ce1;
+  box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+  border-radius: 5px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+}
 </style>
