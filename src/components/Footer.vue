@@ -73,4 +73,35 @@ export default {};
   border: none;
   margin-left: 44px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+  }
+
+  .footer-item2 {
+    margin: 0;
+  }
+
+  .item1-contents a {
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>

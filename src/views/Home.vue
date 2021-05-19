@@ -1,10 +1,11 @@
 <template>
   <div class="home">
-    <div class="navbar">
+    <nav class="navbar">
       <div class="navbar-left">
         <div class="logo">
           <img src="../assets/logo.svg" alt="" />
         </div>
+        <input type="checkbox" id="nav-check">
         <div class="nav-anchor">
           <a style="color: #5e81fe">Home</a>
           <a>Blog</a>
@@ -13,6 +14,12 @@
           <a>Documentation</a>
         </div>
       </div>
+
+      <label for="nav-check">
+        <div class="hamburger-menu">
+          <img src="../assets/newham.png" alt="menu">
+        </div>
+      </label>
 
       <div class="navbar-right">
         <div class="navbar-icon">
@@ -29,7 +36,7 @@
         </div>
         <button class="navbar-btn">Get started</button>
       </div>
-    </div>
+    </nav>
 
     <div class="hero">
       <div class="hero-image">
@@ -517,6 +524,10 @@ a {
   justify-content: center;
   padding: 58px 0;
 }
+.customers img {
+  width: 100%;
+  height: 100%;
+}
 
 .illustration-container {
   display: grid;
@@ -578,7 +589,7 @@ a {
 }
 
 .item2-image {
-  width: 900px;
+  max-width: 900px;
   height: 700px;
   margin-top: 148px;
 }
@@ -618,7 +629,7 @@ a {
   height: 69px;
   margin: auto;
 }
-.features image img {
+.features-image img {
   width: 100%;
   height: 100%;
 }
@@ -640,10 +651,11 @@ a {
 }
 .clouds-background {
   background-image: url(../assets/clouds.png);
-  height: 573px;
+  min-height: 573px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin: 141px 171px 0px;
+  margin: auto;
 }
 .features-btn {
   display: flex;
@@ -831,7 +843,7 @@ a {
 .quotes-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 479px;
+  min-height: 479px;
   background: linear-gradient(180deg, #eaf0ff 0%, #f6f9ff 100%);
 }
 .quotes-first-header {
@@ -859,7 +871,6 @@ a {
 }
 .quotes-image {
   width: 423px;
-  /* height: 206.43px;  */
   margin: auto;
 }
 .quotes-image img {
@@ -910,8 +921,8 @@ a {
   margin: 0px 0px 15px 300px;
 }
 .line-break {
-  border: 1px solid #d8e3fe;
-  width: 653px;
+  border: 0.5px solid #d8e3fe;
+  max-width: 653px;
   margin: auto;
 }
 .question-block {
@@ -1072,4 +1083,153 @@ a {
   color: #ffffff;
   border: none;
 }
+
+.hamburger-menu {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+.hamburger-menu img {
+    width: 100%;
+    height: 100%;
+}
+
+#nav-check {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .illustration-container {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+  }
+  .item1-contents {
+    margin: 0;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    margin: 0;
+  }
+  .features-container-item {
+    margin: 0;
+  }
+  .clouds-background {
+    height: 70em;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .stats-item1 .stats-text {
+    text-align: left;
+    margin: 0;
+  }
+  .stats-item2 .stats-text {
+    margin: 0;
+  }
+  .stats-item1 .numeric {
+    margin: 0;
+  }
+  .stats-item2 .numeric {
+    margin: 0;
+  }
+  .stats-image1 {
+    margin: 0;
+  }
+  .stats-image2 {
+    margin: 0;
+  }
+
+  .blog-container {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .quotes-container {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+  }
+  .quotes-item1 {
+    padding: 0;
+    margin: 0;
+  }
+  .quotes-item2 {
+    margin: 0;
+  }
+  /* .quotes-image {
+    margin: 0;
+  } */
+  .quotes-second-header {
+    padding: 0;
+  }
+
+  .faq {
+    padding: 0;
+  }
+  .question {
+    margin-left: 0;
+  }
+  .new-question {
+    margin: 0;
+  }
+
+  .newsletter-container {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navbar-btn, .logo {
+    display: none;
+  }
+  
+  .nav-anchor {
+    display: none;
+  }
+
+  nav #nav-check:checked ~ .nav-anchor {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 64px;
+    background-color: rgba(0, 0, 0, 0.70);
+    right: 0;
+    text-align: center;
+    border-radius: 3px;
+  }
+
+  .nav-anchor a {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 25px;
+    color: #fff;
+  }
+
+
+
+}
+
+
+
+
+
+
 </style>
